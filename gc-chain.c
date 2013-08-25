@@ -117,7 +117,7 @@ void myTest()
 
         MyList_removeTail(objList);
         show(objList);
-        /*GC_generate_random_backtrace();*/
+        GC_generate_random_backtrace();
     }
 }
 
