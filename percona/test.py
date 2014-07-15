@@ -22,7 +22,9 @@ def get_cursor():
 
 def run(q):
     c, conn = get_cursor()
+    # Works fine with these two settings combined
     #c.execute("set session optimizer_switch='use_index_extensions=off'")
+    #c.execute("set session eq_range_index_dive_limit=500")
 
     while True:
         tgts = q.get()
